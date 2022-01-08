@@ -35,7 +35,7 @@
           url = "https://www.schemastore.org/api/json/catalog.json",
           enable = true,
         },
-           schemas = { kubernetes = "*.yaml" },
+           --schemas = { kubernetes = "*.yaml" },
       }
 }
 

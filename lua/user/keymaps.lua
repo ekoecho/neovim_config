@@ -26,6 +26,9 @@ keymap('n', '<Leader><Leader>', ':source $MYVIMRC<CR>', opts)
 keymap('n', '<C-p>', ':Telescope find_files<CR>', opts)
 keymap('n', '<Leader>b', ':Telescope buffers<CR>', opts)
 keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+keymap('n','<leader>af','<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 keymap('n', '±', ':NvimTreeToggle<CR>', opts)
 
 
