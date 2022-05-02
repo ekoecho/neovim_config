@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	--use "goolord/alpha-nvim"
 	--use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
+	use({ "iamcco/markdown-preview.nvim", run = [[sh -c 'cd app && yarn install']] })
 
 	-- Colorschemes
 	use("morhetz/gruvbox")
@@ -119,8 +120,6 @@ return packer.startup(function(use)
 
 	-- Symbols
 	use("simrat39/symbols-outline.nvim")
-
-	use("ayu-theme/ayu-vim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
