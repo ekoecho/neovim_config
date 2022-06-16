@@ -15,5 +15,3 @@ require("user.lsp-signature")
 require("user.rust-tools")
 require("user.telescope-vimwiki")
 require("user.vimwiki")
--- require "user.lspsaga"
---require "ftplugin.rust"

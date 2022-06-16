@@ -57,7 +57,12 @@ return packer.startup(function(use)
 	--use "lukas-reineke/indent-blankline.nvim"
 	--use "goolord/alpha-nvim"
 	--use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-	use("folke/which-key.nvim")
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			require("which-key").setup()
+		end,
+	})
 	use({ "iamcco/markdown-preview.nvim", run = [[sh -c 'cd app && yarn install']] })
 
 	-- Colorschemes
@@ -82,8 +87,10 @@ return packer.startup(function(use)
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
-	use("glepnir/lspsaga.nvim")
+	--use("glepnir/lspsaga.nvim")
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+
+	use("j-hui/fidget.nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

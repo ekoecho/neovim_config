@@ -1,4 +1,4 @@
-local saga = require 'lspsaga'
+--local saga = require 'lspsaga'
 
 -- add your config value here
 -- default value
@@ -36,7 +36,6 @@ local saga = require 'lspsaga'
 -- like server_filetype_map = {metals = {'sbt', 'scala'}}
 -- server_filetype_map = {}
 
-saga.init_lsp_saga {
-  -- your custom option here
+--saga.init_lsp_saga {
+-- your custom option here
 }
-
